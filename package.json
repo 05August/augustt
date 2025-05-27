@@ -1,24 +1,24 @@
 {
-  "name": "chanhdai.com",
+  "name": "augustt.site",
   "version": "0.1.0",
-  "description": "chanhdai.com is my portfolio website, showcasing my work and experience as a Software Developer & UI/UX Designer.",
-  "homepage": "https://chanhdai.com",
+  "description": "This project is based on the original chanhdai.com repo, which I used as a foundation. I’ve customized and expanded it further to better reflect my own portfolio, including new sections, styling adjustments, and additional features. The site is built with Next.js, Tailwind CSS, and shadcn/ui to ensure a modern, fast, and seamless user experience.",
+  "homepage": "https://augustt.site",
   "license": "MIT",
   "author": {
-    "name": "Nguyen Chanh Dai",
-    "email": "dai@chanhdai.com",
-    "url": "https://github.com/ncdai"
+    "name": "Thuan Thieu",
+    "email": "thuanthieu90@gmail.com",
+    "url": "https://github.com/05August"
   },
   "contributors": [
     {
-      "name": "Nguyen Chanh Dai",
-      "email": "dai@chanhdai.com",
-      "url": "https://github.com/ncdai"
+      "name": "Thuan Thieu",
+      "email": "thuanthieu90@gmail.com",
+      "url": "https://github.com/05August"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ncdai/chanhdai.com.git"
+    "url": "git+https://github.com/05August/augustt.git"
   },
   "scripts": {
     "dev": "next dev -p 1408 --turbopack",

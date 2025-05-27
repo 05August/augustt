@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   title: {
     template: `%s | ${SITE_INFO.name}`,
-    default: `${USER.displayName} - ${USER.jobTitle}`,
+    default: `${USER.displayName} - Just another clown`,
   },
   description: SITE_INFO.description,
   keywords: SITE_INFO.keywords,
@@ -55,26 +55,26 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@iamncdai", // Twitter username
+    creator: "@iamaugustt", // Twitter username
     images: [SITE_INFO.ogImage],
   },
-  icons: {
-    icon: [
-      {
-        url: "https://assets.chanhdai.com/images/favicon.ico",
-        sizes: "any",
-      },
-      {
-        url: "https://assets.chanhdai.com/images/favicon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: {
-      url: "https://assets.chanhdai.com/images/apple-touch-icon.png",
-      type: "image/png",
-      sizes: "180x180",
-    },
-  },
+  // icons: {
+  //   icon: [
+  //     {
+  //       url: "https://assets.chanhdai.com/images/favicon.ico",
+  //       sizes: "any",
+  //     },
+  //     {
+  //       url: "https://assets.chanhdai.com/images/favicon.svg",
+  //       type: "image/svg+xml",
+  //     },
+  //   ],
+  //   apple: {
+  //     url: "https://assets.chanhdai.com/images/apple-touch-icon.png",
+  //     type: "image/png",
+  //     sizes: "180x180",
+  //   },
+  // },
 };
 
 export const viewport: Viewport = {

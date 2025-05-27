@@ -3,7 +3,7 @@ import type { NavItem } from "@/types/nav";
 
 export const SITE_INFO = {
   name: USER.displayName,
-  url: process.env.APP_URL || "https://chanhdai.com",
+  url: process.env.APP_URL || "https://augustt.site",
   ogImage: USER.ogImage,
   description: USER.bio,
   keywords: USER.keywords,
@@ -16,17 +16,17 @@ export const META_THEME_COLORS = {
 
 export const MAIN_NAV: NavItem[] = [
   {
-    title: "Daifolio",
+    title: "Augustt",
     href: "/",
   },
   {
     title: "Blog",
     href: "/blog",
   },
-  {
-    title: "Components",
-    href: "/components",
-  },
+  // {
+  //   title: "Components",
+  //   href: "/components",
+  // },
 ];
 
 export const SOURCE_CODE_GITHUB_URL = "https://github.com/ncdai/chanhdai.com";
@@ -39,7 +39,7 @@ export const VIETNAM_HOLIDAYS = [
 ];
 
 export const UTM_PARAMS = {
-  utm_source: "chanhdai.com",
+  utm_source: "augustt.site",
   utm_medium: "portfolio_website",
   utm_campaign: "referral",
 };
