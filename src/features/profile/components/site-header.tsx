@@ -24,7 +24,7 @@ export function SiteHeader() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-background pt-2">
-      <div className="mx-auto px-4 md:max-w-3xl">
+      <div className="mx-auto px-4 md:max-w-4xl">
         <div className="screen-line-before screen-line-after flex h-12 items-center gap-4 border-x border-edge px-2">
           <motion.div
             initial={{ opacity: 0, visibility: "hidden" }}

@@ -32,7 +32,7 @@ export default function Page() {
       <SiteHeader />
 
       <div className="max-w-screen overflow-x-hidden">
-        <div className="mx-auto px-4 md:max-w-3xl">
+        <div className="mx-auto px-4 md:max-w-4xl">
           <Header />
           <Pattern />
 
