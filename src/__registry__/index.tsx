@@ -52,15 +52,25 @@ export const Index: Record<string, any> = {
       type: "registry:component",
     }],
   },
-  "apple-hello-effect-demo": {
-    name: "apple-hello-effect-demo",
+  "apple-hello-effect-vi-demo": {
+    name: "apple-hello-effect-vi-demo",
     description: "",
     type: "registry:example",
     files: [{
-      path: "src/registry/examples/apple-hello-effect-demo.tsx",
+      path: "src/registry/examples/apple-hello-effect-vi-demo.tsx",
       type: "registry:example",
     }],
-    component: React.lazy(() => import("@/registry/examples/apple-hello-effect-demo.tsx")),
+    component: React.lazy(() => import("@/registry/examples/apple-hello-effect-vi-demo.tsx")),
+  },
+  "apple-hello-effect-en-demo": {
+    name: "apple-hello-effect-en-demo",
+    description: "",
+    type: "registry:example",
+    files: [{
+      path: "src/registry/examples/apple-hello-effect-en-demo.tsx",
+      type: "registry:example",
+    }],
+    component: React.lazy(() => import("@/registry/examples/apple-hello-effect-en-demo.tsx")),
   },
   "theme-switcher-demo": {
     name: "theme-switcher-demo",

@@ -1,5 +1,5 @@
 import { AppleHelloVietnameseEffect } from "@/registry/apple-hello-effect";
 
-export default function AppleHelloEffectDemo() {
+export default function VietnameseDemo() {
   return <AppleHelloVietnameseEffect />;
 }

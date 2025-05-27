@@ -33,7 +33,10 @@ export function SiteFooter() {
 
       <div className="mb-5 flex justify-center">
         <a
-          href="https://www.dmca.com/Protection/Status.aspx?ID=85a452ca-06aa-4352-bfeb-7cb563dbd2b9&refurl=https://chanhdai.com/"
+          href={
+            process.env.NEXT_PUBLIC_DMCA_URL ||
+            "https://www.dmca.com/ProtectionPro.aspx"
+          }
           title="DMCA.com Protection Status"
           aria-label="DMCA.com Protection Status"
           target="_blank"

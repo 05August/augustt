@@ -2,12 +2,23 @@ import type { Registry } from "shadcn/registry";
 
 export const examples: Registry["items"] = [
   {
-    name: "apple-hello-effect-demo",
+    name: "apple-hello-effect-vi-demo",
     type: "registry:example",
     registryDependencies: ["https://chanhdai.com/r/apple-hello-effect.json"],
     files: [
       {
-        path: "examples/apple-hello-effect-demo.tsx",
+        path: "examples/apple-hello-effect-vi-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "apple-hello-effect-en-demo",
+    type: "registry:example",
+    registryDependencies: ["https://chanhdai.com/r/apple-hello-effect.json"],
+    files: [
+      {
+        path: "examples/apple-hello-effect-en-demo.tsx",
         type: "registry:example",
       },
     ],
