@@ -1,7 +1,7 @@
 import Link from "next/link";
 
+import { AugusttMark } from "@/components/augustt-mark";
 import { BrandContextMenu } from "@/components/brand-context-menu";
-import { ChanhDaiMark } from "@/components/chanhdai-mark";
 import { CommandMenu } from "@/components/command-menu";
 import { DesktopNav } from "@/components/desktop-nav";
 import { MobileNav } from "@/components/mobile-nav";
@@ -16,7 +16,7 @@ export const SiteHeader = () => {
         <div className="screen-line-before screen-line-after flex h-12 items-center justify-between gap-4 border-x border-edge px-2">
           <BrandContextMenu>
             <Link href="/" aria-label="Home">
-              <ChanhDaiMark className="h-8" />
+              <AugusttMark className="h-8" />
             </Link>
           </BrandContextMenu>
 

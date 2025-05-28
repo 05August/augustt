@@ -34,7 +34,7 @@ export function TeckStack() {
                   {item.theme ? (
                     <>
                       <Image
-                        src={`/icons/tech-stack/${item.key}-light.svg`}
+                        src={`/assets/icons/tech-stack/${item.key}-light.svg`}
                         alt={`${item.title} light icon`}
                         width={32}
                         height={32}
@@ -42,7 +42,7 @@ export function TeckStack() {
                         unoptimized
                       />
                       <Image
-                        src={`/icons/tech-stack/${item.key}-dark.svg`}
+                        src={`/assets/icons/tech-stack/${item.key}-dark.svg`}
                         alt={`${item.title} dark icon`}
                         width={32}
                         height={32}
@@ -52,7 +52,7 @@ export function TeckStack() {
                     </>
                   ) : (
                     <Image
-                      src={`/icons/tech-stack/${item.key}.svg`}
+                      src={`/assets/icons/tech-stack/${item.key}.svg`}
                       alt={`${item.title} icon`}
                       width={32}
                       height={32}

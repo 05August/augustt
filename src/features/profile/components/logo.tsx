@@ -1,8 +1,8 @@
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
 
-import { ChanhDaiMark } from "@/components/chanhdai-mark";
-import { ChanhDaiWordmark } from "@/components/chanhdai-wordmark";
+import { AugusttMark } from "@/components/augustt-mark";
+import { AugusttWordmark } from "@/components/augustt-wordmark";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/cn";
 
@@ -30,7 +30,7 @@ export function Logo() {
           </div>
 
           <div className="screen-line-after flex items-center justify-center pr-8 after:z-1">
-            <ChanhDaiMark className="h-8 w-auto sm:h-12" />
+            <AugusttMark className="h-8 w-auto sm:h-12" />
           </div>
 
           <div className="flex h-28 items-center justify-center border-r border-edge bg-background">
@@ -40,7 +40,7 @@ export function Logo() {
           </div>
 
           <div className="screen-line-after flex items-center justify-center pr-8 after:z-1">
-            <ChanhDaiWordmark className="h-6 w-auto sm:h-10" />
+            <AugusttWordmark className="h-6 w-auto sm:h-10" />
           </div>
         </div>
       </div>

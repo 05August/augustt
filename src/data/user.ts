@@ -1,8 +1,8 @@
 export const USER = {
   firstName: "Thiều Văn",
   lastName: "Thuận",
-  displayName: "August",
-  username: "august",
+  displayName: "Augustt",
+  username: "augustt",
   gender: "male",
   bio: "Creating with code, driven by passion.",
   flipSentences: [

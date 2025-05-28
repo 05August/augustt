@@ -4,8 +4,8 @@ import { motion, useMotionValueEvent, useScroll } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
 
+import { AugusttMark } from "@/components/augustt-mark";
 import { BrandContextMenu } from "@/components/brand-context-menu";
-import { ChanhDaiMark } from "@/components/chanhdai-mark";
 import { CommandMenu } from "@/components/command-menu";
 import { DesktopNav } from "@/components/desktop-nav";
 import { MobileNav } from "@/components/mobile-nav";
@@ -35,7 +35,7 @@ export function SiteHeader() {
           >
             <BrandContextMenu>
               <Link href="/" aria-label="Home">
-                <ChanhDaiMark className="h-8" />
+                <AugusttMark className="h-8" />
               </Link>
             </BrandContextMenu>
           </motion.div>

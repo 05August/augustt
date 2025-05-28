@@ -34,8 +34,8 @@ import {
 import { SOCIAL_LINKS } from "@/features/profile/data/social-links";
 import { copyText } from "@/utils/copy";
 
-import { ChanhDaiMark, getMarkSVG } from "./chanhdai-mark";
-import { getWordmarkSVG } from "./chanhdai-wordmark";
+import { AugusttMark, getMarkSVG } from "./augustt-mark";
+import { getWordmarkSVG } from "./augustt-wordmark";
 import { Button } from "./ui/button";
 
 type CommandItemType = {
@@ -49,7 +49,7 @@ export const PAGES: CommandItemType[] = [
   {
     title: "Daifolio",
     value: "/",
-    icon: ChanhDaiMark,
+    icon: AugusttMark,
   },
   {
     title: "Blog",
@@ -292,7 +292,7 @@ export function CommandMenu() {
                 );
               }}
             >
-              <ChanhDaiMark />
+              <AugusttMark />
               Copy Mark as SVG
             </CommandItem>
 
