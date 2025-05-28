@@ -1,6 +1,7 @@
 import type { TechStack } from "../types/tech-stack";
 
 export const TECH_STACK: TechStack[] = [
+  // Core Programming Languages
   {
     key: "typescript",
     title: "TypeScript",
@@ -13,24 +14,8 @@ export const TECH_STACK: TechStack[] = [
     href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     categories: ["Language"],
   },
-  // {
-  //   key: "python",
-  //   title: "Python",
-  //   href: "https://www.python.org/",
-  //   categories: ["Language"],
-  // },
-  // {
-  //   key: "php",
-  //   title: "PHP",
-  //   href: "https://www.php.net/",
-  //   categories: ["Language"],
-  // },
-  // {
-  //   key: "java",
-  //   title: "Java",
-  //   href: "https://www.java.com/",
-  //   categories: ["Language"],
-  // },
+
+  // Runtime Environments
   {
     key: "nodejs",
     title: "Node.js",
@@ -43,11 +28,13 @@ export const TECH_STACK: TechStack[] = [
     href: "https://bun.sh/",
     categories: ["Runtime Environment"],
   },
+
+  // Core Framework & Library
   {
     key: "react",
     title: "React",
     href: "https://react.dev/",
-    categories: ["Library", "UI Library"],
+    categories: ["Library"],
   },
   {
     key: "nextjs2",
@@ -56,6 +43,8 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Framework"],
     theme: true,
   },
+
+  // UI & Component Libraries
   {
     key: "tailwindcss",
     title: "Tailwind CSS",
@@ -77,28 +66,30 @@ export const TECH_STACK: TechStack[] = [
     theme: true,
   },
   {
-    key: "motion",
-    title: "Motion",
-    href: "https://motion.dev/",
-    categories: ["Library", "Animation"],
-  },
-  // {
-  //   key: "mobx-state-tree",
-  //   title: "MobX-State-Tree",
-  //   href: "https://mobx-state-tree.js.org/",
-  //   categories: ["State Management"],
-  // },
-  {
-    key: "redux",
-    title: "Redux",
-    href: "https://redux.js.org/",
-    categories: ["State Management"],
+    key: "materialui",
+    title: "Material UI",
+    href: "https://mui.com/",
+    categories: ["Library", "UI Library"],
   },
   {
     key: "antd",
     title: "Ant Design",
     href: "https://ant.design/",
     categories: ["Library", "UI Library"],
+  },
+  {
+    key: "motion",
+    title: "Motion",
+    href: "https://motion.dev/",
+    categories: ["Library", "Animation"],
+  },
+
+  // State Management & Navigation
+  {
+    key: "redux",
+    title: "Redux",
+    href: "https://redux.js.org/",
+    categories: ["State Management"],
   },
   {
     key: "react-router",
@@ -112,60 +103,14 @@ export const TECH_STACK: TechStack[] = [
     href: "https://reactnavigation.org/",
     categories: ["Library", "Navigation"],
   },
-  // {
-  //   key: "loopback",
-  //   title: "LoopBack",
-  //   href: "https://loopback.io/",
-  //   categories: ["Framework"],
-  // },
-  // {
-  //   key: "laravel",
-  //   title: "Laravel",
-  //   href: "https://laravel.com/",
-  //   categories: ["Framework"],
-  // },
+
+  // Development Tools
   {
     key: "git",
     title: "Git",
     href: "https://git-scm.com/",
     categories: ["Version Control"],
   },
-  // {
-  //   key: "docker",
-  //   title: "Docker",
-  //   href: "https://www.docker.com/",
-  //   categories: ["Containerization"],
-  // },
-  // {
-  //   key: "mysql",
-  //   title: "MySQL",
-  //   href: "https://www.mysql.com/",
-  //   categories: ["Database"],
-  // },
-  // {
-  //   key: "mongodb",
-  //   title: "MongoDB",
-  //   href: "https://www.mongodb.com/",
-  //   categories: ["Database"],
-  // },
-  // {
-  //   key: "redis",
-  //   title: "Redis",
-  //   href: "https://redis.io/",
-  //   categories: ["Database"],
-  // },
-  // {
-  //   key: "figma",
-  //   title: "Figma",
-  //   href: "https://www.figma.com/",
-  //   categories: ["Tools", "Design"],
-  // },
-  // {
-  //   key: "ps",
-  //   title: "Adobe Photoshop",
-  //   href: "https://www.adobe.com/vn_en/products/photoshop.html",
-  //   categories: ["Tools", "Design"],
-  // },
   {
     key: "chatgpt",
     title: "ChatGPT",
@@ -173,10 +118,11 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Tools", "AI"],
     theme: true,
   },
-  // {
-  //   key: "zalo-mini-app",
-  //   title: "Zalo Mini App",
-  //   href: "https://mini.zalo.me/",
-  //   categories: ["Other"],
-  // },
+  {
+    key: "cursor",
+    title: "Cursor",
+    href: "https://www.cursor.com/",
+    categories: ["Tools", "AI"],
+    theme: true,
+  },
 ];
