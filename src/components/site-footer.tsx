@@ -13,11 +13,11 @@ export function SiteFooter() {
         Built by{" "}
         <a
           className="link"
-          href="https://linkedin.com/in/ncdai"
+          href="https://www.linkedin.com/in/thieu-thuan-2861b5269/"
           target="_blank"
           rel="noopener"
         >
-          ncdai
+          augustt
         </a>
         . The source code is available on{" "}
         <a
@@ -30,7 +30,7 @@ export function SiteFooter() {
         </a>
         .
       </p>
-
+      {/* 
       <div className="mb-5 flex justify-center">
         <a
           href={
@@ -55,7 +55,7 @@ export function SiteFooter() {
             />
           </svg>
         </a>
-      </div>
+      </div> */}
 
       <div className="screen-line-before grid grid-cols-2 gap-1 p-4 sm:grid-cols-4">
         {USER.otherWebsites.map((website) => {

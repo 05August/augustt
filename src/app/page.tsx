@@ -7,9 +7,9 @@ import { SiteFooter } from "@/components/site-footer";
 import { VIETNAM_HOLIDAYS } from "@/config/site";
 import { USER } from "@/data/user";
 import { About } from "@/features/profile/components/about";
-import { Awards } from "@/features/profile/components/awards";
-import { Blog } from "@/features/profile/components/blog";
-import { Certifications } from "@/features/profile/components/certifications";
+// import { Awards } from "@/features/profile/components/awards";
+// import { Blog } from "@/features/profile/components/blog";
+// import { Certifications } from "@/features/profile/components/certifications";
 import { Experiences } from "@/features/profile/components/experiences";
 import { Header } from "@/features/profile/components/header";
 import { Logo } from "@/features/profile/components/logo";
@@ -47,21 +47,21 @@ export default function Page() {
 
           <TeckStack />
           <Pattern />
-
+          {/* 
           <Blog />
-          <Pattern />
+          <Pattern /> */}
 
           <Experiences />
           <Pattern />
 
           <Projects />
           <Pattern />
-
+          {/* 
           <Awards />
-          <Pattern />
+          <Pattern /> */}
 
-          <Certifications />
-          <Pattern />
+          {/* <Certifications />
+          <Pattern /> */}
 
           <Logo />
           <Pattern />

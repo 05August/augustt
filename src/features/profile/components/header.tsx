@@ -2,9 +2,9 @@ import Image from "next/image";
 
 import { SimpleTooltip } from "@/components/ui/tooltip";
 import { USER } from "@/data/user";
-import { FlipSentences } from "@/registry/flip-sentences";
+import { FlipSentences } from "@/registry/flip-sentences/flip-sentences";
 
-import { ChanhDaiCover } from "./chanhdai-cover";
+import { AugusttCover } from "./augustt-cover";
 import { VerifiedIcon } from "./verified-icon";
 
 export function Header() {
@@ -12,7 +12,7 @@ export function Header() {
     <div className="relative mt-2">
       <div className="flex h-12" />
 
-      <ChanhDaiCover />
+      <AugusttCover />
 
       <div className="screen-line-after flex border-x border-edge">
         <div className="shrink-0 border-r border-edge">

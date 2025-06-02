@@ -20,7 +20,7 @@ export function Projects() {
 
       <AccordionPrimitive.Root
         type="multiple"
-        defaultValue={["react-wheel-picker", "portfolio-website", "zadark"]}
+        defaultValue={["zeus-platform", "q3-landing-page", "charclub-ai"]}
       >
         <CollapsibleList
           items={PROJECTS}

@@ -31,11 +31,11 @@ export const metadata: Metadata = {
   keywords: SITE_INFO.keywords,
   authors: [
     {
-      name: "ncdai",
+      name: "augustt",
       url: SITE_INFO.url,
     },
   ],
-  creator: "ncdai",
+  creator: "augustt",
   openGraph: {
     siteName: SITE_INFO.name,
     url: "/",
@@ -58,23 +58,23 @@ export const metadata: Metadata = {
     creator: "@iamaugustt", // Twitter username
     images: [SITE_INFO.ogImage],
   },
-  // icons: {
-  //   icon: [
-  //     {
-  //       url: "https://assets.chanhdai.com/images/favicon.ico",
-  //       sizes: "any",
-  //     },
-  //     {
-  //       url: "https://assets.chanhdai.com/images/favicon.svg",
-  //       type: "image/svg+xml",
-  //     },
-  //   ],
-  //   apple: {
-  //     url: "https://assets.chanhdai.com/images/apple-touch-icon.png",
-  //     type: "image/png",
-  //     sizes: "180x180",
-  //   },
-  // },
+  icons: {
+    icon: [
+      {
+        url: "/assets/favicon.ico",
+        sizes: "any",
+      },
+      {
+        url: "/assets/favicon.svg",
+        type: "image/svg+xml",
+      },
+    ],
+    apple: {
+      url: "/assets/apple-touch-icon.png",
+      type: "image/png",
+      sizes: "180x180",
+    },
+  },
 };
 
 export const viewport: Viewport = {
@@ -101,7 +101,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               try {
-                if (localStorage['chanhdai.theme'] === 'dark' || ((!('chanhdai.theme' in localStorage) || localStorage['chanhdai.theme'] === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                if (localStorage['augustt.theme'] === 'dark' || ((!('augustt.theme' in localStorage) || localStorage['augustt.theme'] === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                   document.querySelector('meta[name="theme-color"]').setAttribute('content', '${META_THEME_COLORS.dark}')
                 }
               } catch (_) {}
