@@ -2,7 +2,7 @@ import { AugusttMark } from "@/components/augustt-mark";
 import { BrandContextMenu } from "@/components/brand-context-menu";
 import { cn } from "@/lib/cn";
 
-export function ChanhDaiCover() {
+export function AugusttCover() {
   return (
     <BrandContextMenu>
       <div

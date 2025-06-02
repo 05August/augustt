@@ -2,28 +2,26 @@ import type { Project } from "../types/projects";
 
 export const PROJECTS: Project[] = [
   {
-    id: "react-wheel-picker",
-    title: "React Wheel Picker",
-    time: "05.2025 — present",
-    link: "https://react-wheel-picker.chanhdai.com",
+    id: "zeus-platform",
+    title: "Zeus Platform",
+    time: "12.2024 — present",
+    // link: "https://zeus-platform.pages.dev",
     tags: [
       "React",
       "TypeScript",
-      "Monorepo",
-      "Turborepo",
-      "pnpm-workspace",
-      "Package Publishing",
-      "NPM Registry",
+      "React Query",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "BytePlus SDK",
     ],
     description:
-      "iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support.",
-    logo: "https://assets.chanhdai.com/images/project-logos/react-wheel-picker.svg",
+      "An edtech platform that connects students with teachers for live virtual classes and personalized learning.\n\n- Build core features for users to book lessons or classes with teachers, and for teachers to create classes and build profiles.\n- Develop authentication system including sign up, login, verify and password recovery.\n- Integrate BytePlus SDK to enable virtual classrooms with audio/video, screen sharing, chat, raise hand, and moderation tools (mute/unmute).\n- Implement parent dashboard allowing guardians to purchase lessons for children and link them to student accounts.\n- Ensure UI/UX consistency and responsiveness across devices.\n- Collaborate with backend and design teams to deliver seamless learning experiences. ",
   },
   {
-    id: "quaric-website",
-    title: "quaric.com",
-    time: "03.2024 — present",
-    link: "https://quaric.com",
+    id: "q3-landing-page",
+    title: "Q3 Language",
+    time: "03.2025",
+    link: "https://q3-landing-page.pages.dev/vi/",
     tags: [
       "Company Project",
       "Next.js 15",

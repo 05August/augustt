@@ -6,9 +6,7 @@ import React from "react";
 import { Markdown } from "@/components/markdown";
 import { Tag } from "@/components/ui/tag";
 import { Prose } from "@/components/ui/typography";
-import { UTM_PARAMS } from "@/config/site";
 import { cn } from "@/lib/cn";
-import { addQueryParams } from "@/utils/url";
 
 import type { Project } from "../../types/projects";
 
@@ -53,15 +51,17 @@ export function ProjectItem({
             <div>
               <h3 className="mb-1 flex items-center gap-1 font-heading leading-snug font-medium text-balance decoration-ring underline-offset-4 group-hover/project:underline">
                 {project.title}
-                <a
-                  className="flex size-6 shrink-0 items-center justify-center text-muted-foreground"
-                  href={addQueryParams(project.link, UTM_PARAMS)}
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <ArrowUpRightIcon className="pointer-events-none size-4" />
-                  <span className="sr-only">Open</span>
-                </a>
+                {project.link && (
+                  <a
+                    className="flex size-6 shrink-0 items-center justify-center text-muted-foreground"
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <ArrowUpRightIcon className="pointer-events-none size-4" />
+                    <span className="sr-only">Open</span>
+                  </a>
+                )}
               </h3>
 
               <p className="font-mono text-sm text-muted-foreground">

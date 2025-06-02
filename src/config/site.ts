@@ -20,8 +20,8 @@ export const MAIN_NAV: NavItem[] = [
     href: "/",
   },
   {
-    title: "Blog",
-    href: "/blog",
+    title: "Projects",
+    href: "#projects",
   },
   // {
   //   title: "Components",
@@ -29,7 +29,7 @@ export const MAIN_NAV: NavItem[] = [
   // },
 ];
 
-export const SOURCE_CODE_GITHUB_URL = "https://github.com/ncdai/chanhdai.com";
+export const SOURCE_CODE_GITHUB_URL = "https://github.com/05August/augustt";
 
 export const VIETNAM_HOLIDAYS = [
   "2025-04-30", // Ngày Giải phóng Miền Nam

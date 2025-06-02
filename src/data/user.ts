@@ -15,7 +15,7 @@ export const USER = {
   phoneNumber: "MDk4NjI1MTg5Mg==", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   email: "dGh1YW50aGlldTkwQGdtYWlsLmNvbQ==", // base64 encoded
   website: "https://augustt.site",
-  otherWebsites: ["https://augustt.site"],
+  otherWebsites: ["https://augustt.site", "https://augustt.tech"],
   dateOfBirth: "2002-06-27", // YYYY-MM-DD
   jobTitle: "Frontend Developer",
   jobs: [

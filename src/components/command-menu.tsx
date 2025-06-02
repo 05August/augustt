@@ -2,18 +2,13 @@
 
 import {
   BriefcaseBusinessIcon,
-  ComponentIcon,
   FileBadgeIcon,
-  FilesIcon,
   FileTextIcon,
-  FileUserIcon,
   FolderCodeIcon,
   LetterTextIcon,
-  MedalIcon,
   MonitorIcon,
   MoonStarIcon,
   SunIcon,
-  TriangleDashedIcon,
   TypeIcon,
 } from "lucide-react";
 import Image from "next/image";
@@ -47,23 +42,13 @@ type CommandItemType = {
 
 export const PAGES: CommandItemType[] = [
   {
-    title: "Daifolio",
+    title: "Augustt",
     value: "/",
     icon: AugusttMark,
   },
-  {
-    title: "Blog",
-    value: "/blog",
-    icon: FilesIcon,
-  },
-  {
-    title: "Components",
-    value: "/components",
-    icon: ComponentIcon,
-  },
 ];
 
-const DAIFOLIO: CommandItemType[] = [
+const AUGUSTT: CommandItemType[] = [
   {
     title: "About",
     value: "/#about",
@@ -79,52 +64,21 @@ const DAIFOLIO: CommandItemType[] = [
     value: "/#projects",
     icon: FolderCodeIcon,
   },
-  {
-    title: "Awards",
-    value: "/#awards",
-    icon: MedalIcon,
-  },
+  // {
+  //   title: "Awards",
+  //   value: "/#awards",
+  //   icon: MedalIcon,
+  // },
   {
     title: "Certs",
     value: "/#certs",
     icon: FileBadgeIcon,
   },
-  {
-    title: "vCard",
-    value: "/vcard",
-    icon: FileUserIcon,
-  },
-];
-
-const BLOG: CommandItemType[] = [
-  {
-    title: "React Wheel Picker",
-    value: "/blog/react-wheel-picker",
-  },
-  {
-    title: "ChanhDai Brand",
-    value: "/blog/chanhdai-brand",
-  },
-  {
-    title: "Theme Switcher",
-    value: "/blog/theme-switcher-component",
-  },
-  {
-    title: "Writing Effect inspired by Apple",
-    value: "/blog/writing-effect-inspired-by-apple",
-  },
-  {
-    title: "Awesome Terminal — iTerm2 + Zsh + Oh My Zsh + Amazon Q",
-    value: "/blog/awesome-terminal",
-  },
-  {
-    title: "Installing Uptime Kuma with Docker and setting up NGINX with SSL",
-    value: "/blog/uptime-kuma",
-  },
-  {
-    title: "Welcome to chanhdai.com",
-    value: "/blog/welcome",
-  },
+  // {
+  //   title: "vCard",
+  //   value: "/vcard",
+  //   icon: FileUserIcon,
+  // },
 ];
 
 const LINKS: CommandItemType[] = SOCIAL_LINKS.map((item) => ({
@@ -243,18 +197,18 @@ export function CommandMenu() {
           <CommandSeparator />
 
           <CommandGroupItems
-            heading="Daifolio"
-            items={DAIFOLIO}
+            heading="Augustt"
+            items={AUGUSTT}
             onSelect={handleOpenLink}
           />
 
           <CommandSeparator />
 
-          <CommandGroupItems
-            heading="Blog"
+          {/* <CommandGroupItems
+            heading="Projects"
             items={BLOG}
             onSelect={handleOpenLink}
-          />
+          /> */}
 
           <CommandSeparator />
 
@@ -306,13 +260,6 @@ export function CommandMenu() {
             >
               <TypeIcon />
               Copy Logotype as SVG
-            </CommandItem>
-
-            <CommandItem
-              onSelect={() => handleOpenLink("/blog/chanhdai-brand")}
-            >
-              <TriangleDashedIcon />
-              Brand Guidelines
             </CommandItem>
           </CommandGroup>
         </CommandList>
