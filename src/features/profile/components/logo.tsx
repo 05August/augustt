@@ -1,9 +1,5 @@
-import { ArrowRightIcon } from "lucide-react";
-import Link from "next/link";
-
 import { AugusttMark } from "@/components/augustt-mark";
 import { AugusttWordmark } from "@/components/augustt-wordmark";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/cn";
 
 import { Panel, PanelHeader, PanelTitle } from "./panel";
@@ -43,15 +39,6 @@ export function Logo() {
             <AugusttWordmark className="h-6 w-auto sm:h-10" />
           </div>
         </div>
-      </div>
-
-      <div className="flex h-12 items-center justify-center pb-px">
-        <Button variant="secondary" asChild>
-          <Link href="/blog/chanhdai-brand">
-            ChanhDai Brand
-            <ArrowRightIcon />
-          </Link>
-        </Button>
       </div>
     </Panel>
   );
