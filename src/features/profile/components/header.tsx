@@ -44,10 +44,10 @@ export function Header() {
 
         <div className="flex flex-1 flex-col">
           <div className="flex grow items-end mask-r-from-60% pb-1 pl-4">
-            <div className="line-clamp-1 font-mono text-xs text-zinc-300 select-none dark:text-zinc-800">
+            <div className="line-clamp-1 font-mono text-xs text-zinc-400 select-none dark:text-muted-foreground">
               {"text-3xl "}
-              <span className="inline dark:hidden">text-zinc-950</span>
-              <span className="hidden dark:inline">text-zinc-50</span>
+              <span className="inline dark:hidden">text-zinc-4000</span>
+              <span className="hidden dark:inline">text-zinc-700</span>
               {" font-medium"}
             </div>
           </div>

@@ -4,6 +4,7 @@ import { USER } from "@/data/user";
 import { urlToName } from "@/utils/url";
 
 import { Panel, PanelContent } from "../panel";
+import { CodingStatusItem } from "./coding-status-item";
 import { EmailItem } from "./email-item";
 import { IntroItem } from "./intro-item";
 import { JobItem } from "./job-item";
@@ -37,6 +38,8 @@ export function Overview() {
           content={urlToName(USER.website)}
           href={USER.website}
         />
+
+        <CodingStatusItem />
       </PanelContent>
     </Panel>
   );
