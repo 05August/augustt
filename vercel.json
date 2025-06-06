@@ -6,6 +6,6 @@
     }
   ],
   "env": {
-    "CRON_SECRET": "@cron-secret"
+    "CRON_SECRET": "@cron_secret"
   }
 }
