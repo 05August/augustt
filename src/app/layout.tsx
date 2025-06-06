@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   title: {
     template: `%s | ${SITE_INFO.name}`,
-    default: `${USER.displayName} - Just another clown`,
+    default: `${USER.displayName} | Just another clown`,
   },
   description: SITE_INFO.description,
   keywords: SITE_INFO.keywords,

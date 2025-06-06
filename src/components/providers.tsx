@@ -7,6 +7,7 @@ import { Provider as JotaiProvider } from "jotai";
 import { ThemeProvider } from "next-themes";
 
 import { Toaster } from "@/components/ui/sonner";
+import { DEFAULT_THEME, getAllThemeKeys } from "@/config/themes";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -16,8 +17,9 @@ export function Providers({ children }: { children: React.ReactNode }) {
         disableTransitionOnChange
         enableColorScheme
         storageKey="augustt.theme"
-        defaultTheme="system"
+        defaultTheme={DEFAULT_THEME}
         attribute="class"
+        themes={getAllThemeKeys()}
       >
         <AppProgressProvider
           color="#2563eb"

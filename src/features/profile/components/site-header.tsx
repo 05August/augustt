@@ -11,6 +11,7 @@ import { DesktopNav } from "@/components/desktop-nav";
 import { MobileNav } from "@/components/mobile-nav";
 import { NavItemGitHub } from "@/components/nav-item-github";
 import { ToggleTheme } from "@/components/toggle-theme";
+import { ToggleThemeBase } from "@/components/toggle-theme-base";
 import { MAIN_NAV } from "@/config/site";
 
 export function SiteHeader() {
@@ -47,6 +48,7 @@ export function SiteHeader() {
           <div className="flex items-center gap-2">
             <CommandMenu />
             <NavItemGitHub />
+            <ToggleThemeBase />
             <ToggleTheme />
             <MobileNav className="sm:hidden" items={MAIN_NAV} />
           </div>
