@@ -7,28 +7,18 @@ This is a continuously evolving side project where I experiment with new technol
 Check out the live site: [augustt.site](https://augustt.site)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://assets.chanhdai.com/images/screenshot-desktop-dark.webp">
-  <source media="(prefers-color-scheme: light)" srcset="https://assets.chanhdai.com/images/screenshot-desktop-light.webp">
-  <img src="https://assets.chanhdai.com/images/screenshot-desktop-light.webp" alt="Screenshot">
+  <source media="(prefers-color-scheme: dark)" srcset="https://www.augustt.site/assets/images/screenshot-desktop-dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://www.augustt.site/assets/images/screenshot-desktop-light.webp">
+  <img src="https://www.augustt.site/assets/images/screenshot-desktop-light.webp" alt="Screenshot">
 </picture>
 
 ## Core Features & Technologies
 
 - **Elegant & Minimalistic UI**: Clean and modern design
 - **Dark Mode**: Supports light and dark themes for a better user experience
-- **vCard Integration**: Digital business card with contact details
 - **SEO Optimization**: [JSON-LD schema](https://json-ld.org), sitemap, robots
-- **Email Protection**: Obfuscation to prevent spam
-- Installable PWA
 - [Next.js 15](https://nextjs.org/): Latest React framework for optimized performance and scalability
 - [Tailwind CSS v4](https://tailwindcss.com): Modern utility-first CSS framework for styling
-
-### Blog Features
-
-- MDX & Markdown support
-- Syntax Highlighting for better readability
-- RSS Feed for easy content distribution
-- Dynamic OG Images for rich previews
 
 ## Acknowledgments
 
@@ -41,9 +31,3 @@ Check out the live site: [augustt.site](https://augustt.site)
 - [Aceternity UI](https://ui.aceternity.com)
 - [Lucide](https://lucide.dev)
 - And many other open-source libraries used in `package.json`
-
-## GitAds Sponsored
-
-[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=ncdai/chanhdai.com@github)](https://gitads.dev/v1/ad-track?source=ncdai/chanhdai.com@github)
-
-<!-- GitAds-Verify: QICCAB4PFWV9MHUGPGPN5B2I8SAXLAOK -->

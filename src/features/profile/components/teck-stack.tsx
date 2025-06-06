@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import { useTheme } from "next-themes";
+import React, { useMemo } from "react";
 
 import { SimpleTooltip } from "@/components/ui/tooltip";
 import { cn } from "@/lib/cn";
@@ -8,6 +11,30 @@ import { TECH_STACK } from "../data/tech-stack";
 import { Panel, PanelContent, PanelHeader, PanelTitle } from "./panel";
 
 export function TeckStack() {
+  const { theme } = useTheme();
+
+  // Get current theme base and variant
+  const currentThemeInfo = useMemo(() => {
+    if (!theme || theme === "system") {
+      return { base: "classic", variant: "light" };
+    }
+
+    if (theme === "light") {
+      return { base: "classic", variant: "light" };
+    }
+
+    if (theme === "dark") {
+      return { base: "classic", variant: "dark" };
+    }
+
+    if (theme.includes("-")) {
+      const [base, variant] = theme.split("-");
+      return { base, variant: variant as "light" | "dark" };
+    }
+
+    return { base: "classic", variant: "light" };
+  }, [theme]);
+
   return (
     <Panel>
       <PanelHeader>
@@ -34,19 +61,10 @@ export function TeckStack() {
                   {item.theme ? (
                     <>
                       <Image
-                        src={`/assets/icons/tech-stack/${item.key}-light.svg`}
-                        alt={`${item.title} light icon`}
+                        src={`/assets/icons/tech-stack/${item.key}-${currentThemeInfo.variant}.svg`}
+                        alt={`${item.title} ${currentThemeInfo.variant} icon`}
                         width={32}
                         height={32}
-                        className="hidden [html.light_&]:block"
-                        unoptimized
-                      />
-                      <Image
-                        src={`/assets/icons/tech-stack/${item.key}-dark.svg`}
-                        alt={`${item.title} dark icon`}
-                        width={32}
-                        height={32}
-                        className="hidden [html.dark_&]:block"
                         unoptimized
                       />
                     </>
