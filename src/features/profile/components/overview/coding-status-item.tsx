@@ -132,7 +132,7 @@ export function CodingStatusItem() {
 
       {/* Content - single line như IntroItem */}
       <p
-        className={`text-balance ${status.isOnline ? "text-green-600 dark:text-green-400" : ""}`}
+        className={`text-balance break-words ${status.isOnline ? "text-green-600 dark:text-green-400" : ""}`}
       >
         {getStatusText()}
       </p>
