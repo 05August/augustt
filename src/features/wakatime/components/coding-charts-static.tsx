@@ -40,11 +40,13 @@ function ProgressBar({ items, title, icon }: ProgressBarProps) {
       <div className="space-y-3">
         {topItems.map((item, index) => (
           <div key={index} className="space-y-1">
-            <div className="flex justify-between text-sm">
+            <div className="flex justify-between gap-1 text-sm">
               <span className="font-mono text-muted-foreground">
                 {item.name}
               </span>
-              <span className="font-mono font-semibold">{item.text}</span>
+              <span className="text-left font-mono font-semibold">
+                {item.text}
+              </span>
             </div>
             <div className="h-2 overflow-hidden rounded-full bg-muted">
               <motion.div
