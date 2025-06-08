@@ -15,6 +15,7 @@ async function updateCronStatus(status: "success" | "error", message: string) {
         body: JSON.stringify({ status, message }),
       }
     );
+    console.log("🚀 ~ updateCronStatus ~ response:", response);
 
     if (!response.ok) {
       console.warn(
@@ -23,6 +24,7 @@ async function updateCronStatus(status: "success" | "error", message: string) {
       );
     }
   } catch (error) {
+    console.log("🚀 ~ updateCronStatus ~ error:", error);
     console.warn("⚠️ Lỗi khi cập nhật trạng thái cronjob:", error);
   }
 }
