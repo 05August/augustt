@@ -48,7 +48,6 @@ export async function POST(request: Request) {
   try {
     const { status, message } = await request.json();
 
-    console.log("🚀 ~ POST ~ status:", status);
     lastCronRun = {
       timestamp: new Date().toISOString(),
       status: status || "success",
@@ -60,7 +59,6 @@ export async function POST(request: Request) {
       data: lastCronRun,
     });
   } catch (error) {
-    console.log("🚀 ~ POST ~ error:", error);
     return NextResponse.json(
       {
         message: "Lỗi khi cập nhật trạng thái cronjob",

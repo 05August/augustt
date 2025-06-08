@@ -6,7 +6,7 @@ import { NextResponse } from "next/server";
 async function updateCronStatus(status: "success" | "error", message: string) {
   try {
     const response = await fetch(
-      `${process.env.BASE_URL ? `https://${process.env.BASE_URL}/api/cron-status` : "https://augustt.site/api/cron-status"}`,
+      `${process.env.BASE_URL ? `${process.env.BASE_URL}/api/cron-status` : "https://augustt.site/api/cron-status"}`,
       {
         method: "POST",
         headers: {
@@ -15,7 +15,6 @@ async function updateCronStatus(status: "success" | "error", message: string) {
         body: JSON.stringify({ status, message }),
       }
     );
-    console.log("🚀 ~ updateCronStatus ~ response:", response);
 
     if (!response.ok) {
       console.warn(
@@ -24,7 +23,6 @@ async function updateCronStatus(status: "success" | "error", message: string) {
       );
     }
   } catch (error) {
-    console.log("🚀 ~ updateCronStatus ~ error:", error);
     console.warn("⚠️ Lỗi khi cập nhật trạng thái cronjob:", error);
   }
 }
