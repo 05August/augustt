@@ -4,7 +4,7 @@ export async function GET() {
   try {
     // Gọi API cron-status để lấy thông tin
     const cronStatusResponse = await fetch(
-      `${process.env.BASE_URL ? `https://${process.env.BASE_URL}/api/cron-status` : "https://augustt.site/api/cron-status"}`
+      `${process.env.BASE_URL ? `${process.env.BASE_URL}/api/cron-status` : "https://augustt.site/api/cron-status"}`
     );
     const cronStatus = await cronStatusResponse.json();
 
