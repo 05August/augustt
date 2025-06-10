@@ -7,6 +7,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { VIETNAM_HOLIDAYS } from "@/config/site";
 import { USER } from "@/data/user";
 import { About } from "@/features/profile/components/about";
+import { Certifications } from "@/features/profile/components/certifications";
 // import { Awards } from "@/features/profile/components/awards";
 // import { Blog } from "@/features/profile/components/blog";
 // import { Certifications } from "@/features/profile/components/certifications";
@@ -60,8 +61,8 @@ export default function Page() {
           <Awards />
           <Pattern /> */}
 
-          {/* <Certifications />
-          <Pattern /> */}
+          <Certifications />
+          <Pattern />
 
           <Logo />
           <Pattern />
