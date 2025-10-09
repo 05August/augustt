@@ -26,9 +26,10 @@ export const USER = {
     },
   ],
   about: `
-I am a front-end developer with over 2 years of experience, specializing in ReactJS for web development.
- I have expertise in HTML, CSS, JavaScript, and TypeScript, and I possess a deep understanding of the ReactJS library and related frameworks such as Next.js.
-  I adapt easily to new technologies and excel in research, logical thinking, and problem-solving.
+Frontend Developer with over 2 years of experience specializing in ReactJS and Next.js.
+Skilled in building scalable web applications with Clean Architecture, SSR/SSG/ISR, and strong focus on SEO and performance optimization.
+Experienced with TypeScript, Tailwind CSS, and modern UI frameworks like Shadcn UI and Headless UI.
+Passionate about creating responsive, high-quality user interfaces and improving developer experience through reusable components and clean code.
   `,
   avatar: "/assets/images/blackgoku.jpg",
   ogImage: "/assets/images/blackgoku.jpg", // todo: change this
