@@ -28,7 +28,7 @@ export const USER = {
   about: `
 Frontend Developer with over 2 years of experience specializing in ReactJS and Next.js.
 Skilled in building scalable web applications with Clean Architecture, SSR/SSG/ISR, and strong focus on SEO and performance optimization.
-Experienced with TypeScript, Tailwind CSS, and modern UI frameworks like Shadcn UI, Material UI, Ant Design, and Headless UI.
+Experienced with TypeScript, Tailwind CSS, and modern UI libraries like Shadcn UI, Material UI, Ant Design, and Headless UI.
 Passionate about creating responsive, high-quality user interfaces and improving developer experience through reusable components and clean code.
  I adapt easily to new technologies and excel in research, logical thinking, and problem-solving.
   `,
