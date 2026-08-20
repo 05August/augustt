@@ -53,7 +53,7 @@ Recognized for a problem-solving mindset and seamless collaboration with Product
     "Frontend Developer Hanoi",
     // Tech stack
     "React",
-    "Next.js",
+    "Next.js ",
     "TypeScript",
     "Tailwind CSS",
     // Site & intent
