@@ -29,7 +29,7 @@ export default function Page() {
 
       <SiteHeader />
 
-      <div className="max-w-screen overflow-x-hidden">
+      <main className="max-w-screen overflow-x-hidden">
         <div className="mx-auto px-4 md:max-w-4xl">
           <Header />
           <Pattern />
@@ -66,7 +66,7 @@ export default function Page() {
 
           <SiteFooter />
         </div>
-      </div>
+      </main>
 
       {/* <QuickActions /> */}
 

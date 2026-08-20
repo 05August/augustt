@@ -88,7 +88,7 @@ export default async function StatsPage() {
     <>
       <SiteHeader />
 
-      <div className="max-w-screen overflow-x-hidden">
+      <main className="max-w-screen overflow-x-hidden">
         <div className="mx-auto px-4 md:max-w-4xl">
           <Header />
           <Pattern />
@@ -177,7 +177,7 @@ export default async function StatsPage() {
 
           <SiteFooter />
         </div>
-      </div>
+      </main>
 
       <ScrollTop />
     </>

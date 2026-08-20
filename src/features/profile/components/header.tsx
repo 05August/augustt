@@ -61,10 +61,13 @@ export function Header() {
 
         <div className="flex flex-1 flex-col">
           <div className="flex grow items-end mask-r-from-60% pb-1 pl-4">
-            <div className="line-clamp-1 font-mono text-xs text-zinc-400 select-none dark:text-muted-foreground">
+            <div
+              aria-hidden="true"
+              className="line-clamp-1 font-mono text-xs text-zinc-500 select-none dark:text-zinc-400"
+            >
               {"text-3xl "}
-              <span className="inline dark:hidden">text-zinc-4000</span>
-              <span className="hidden dark:inline">text-zinc-700</span>
+              <span className="inline dark:hidden">text-zinc-500</span>
+              <span className="hidden dark:inline">text-zinc-400</span>
               {" font-medium"}
             </div>
           </div>
