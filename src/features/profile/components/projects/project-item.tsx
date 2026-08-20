@@ -26,9 +26,10 @@ export function ProjectItem({
             alt={project.title}
             width={32}
             height={32}
-            quality={100}
+            sizes="24px"
+            quality={85}
+            loading="lazy"
             className="mx-4 flex size-6 shrink-0"
-            unoptimized
           />
         ) : (
           <div
