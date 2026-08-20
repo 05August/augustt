@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     ],
     description:
       "My personal portfolio website showcasing projects, experience, and real-time coding statistics.\n\n- Based on the original chanhdai.com repository as a foundation, extensively customized and expanded with new features.\n- Implemented advanced multi-theme system supporting light/dark modes using next-themes with seamless theme switching.\n- Integrated comprehensive Wakatime analytics with real-time coding status, detailed statistics dashboard (/stats), and ISR for optimal performance.\n- Built with modern tech stack including Next.js 15, React 19, TypeScript, and Tailwind CSS v4 for cutting-edge development experience.\n- Optimized for performance with Incremental Static Regeneration (ISR), CDN caching, and Vercel Edge functions.\n- Features include JSON-LD schema for SEO, responsive design, animated components with Motion, and automated deployment with Vercel.\n- Showcases 7+ projects, comprehensive work experience, and dynamic coding activity tracking through Wakatime integration.",
-    logo: "/assets/images/blackgoku.jpg",
+    logo: "/assets/images/blackgoku-160.webp",
   },
   {
     id: "ican-learning-platform",

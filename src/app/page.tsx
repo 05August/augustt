@@ -1,5 +1,4 @@
-import { Confetti } from "@/components/confetti";
-import { ScrollTop } from "@/components/scroll-top";
+import { HomePageDeferred } from "@/components/home-page-deferred";
 import { SiteFooter } from "@/components/site-footer";
 import { VIETNAM_HOLIDAYS } from "@/config/site";
 import { USER } from "@/data/user";
@@ -71,9 +70,9 @@ export default function Page() {
 
       {/* <QuickActions /> */}
 
-      <Confetti datesWithoutYear={[USER.dateOfBirth, ...VIETNAM_HOLIDAYS]} />
-
-      <ScrollTop />
+      <HomePageDeferred
+        confettiDates={[USER.dateOfBirth, ...VIETNAM_HOLIDAYS]}
+      />
     </>
   );
 }

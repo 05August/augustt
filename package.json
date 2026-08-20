@@ -106,6 +106,12 @@
     "@types/react": "19.1.4",
     "@types/react-dom": "19.1.4"
   },
+  "browserslist": [
+    "chrome >= 92",
+    "edge >= 92",
+    "firefox >= 90",
+    "safari >= 15"
+  ],
   "engines": {
     "node": "20 || >=22",
     "pnpm": ">=9"
