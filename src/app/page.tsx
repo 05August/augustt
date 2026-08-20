@@ -1,6 +1,3 @@
-import dayjs from "dayjs";
-import type { ProfilePage as PageSchema, WithContext } from "schema-dts";
-
 import { Confetti } from "@/components/confetti";
 import { ScrollTop } from "@/components/scroll-top";
 import { SiteFooter } from "@/components/site-footer";
@@ -20,14 +17,15 @@ import { SiteHeader } from "@/features/profile/components/site-header";
 import { SocialLinks } from "@/features/profile/components/social-links";
 import { TeckStack } from "@/features/profile/components/teck-stack";
 import { cn } from "@/lib/cn";
+import { getProfilePageJsonLd } from "@/lib/seo";
 
 export default function Page() {
-  const websiteJsonLd = getPageJsonLd();
+  const profileJsonLd = getProfilePageJsonLd();
 
   return (
     <>
       <script type="application/ld+json">
-        {JSON.stringify(websiteJsonLd)}
+        {JSON.stringify(profileJsonLd)}
       </script>
 
       <SiteHeader />
@@ -78,21 +76,6 @@ export default function Page() {
       <ScrollTop />
     </>
   );
-}
-
-function getPageJsonLd(): WithContext<PageSchema> {
-  return {
-    "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    dateCreated: dayjs(USER.dateCreated).toISOString(),
-    dateModified: dayjs().toISOString(),
-    mainEntity: {
-      "@type": "Person",
-      name: USER.displayName,
-      identifier: USER.username,
-      image: USER.avatar,
-    },
-  };
 }
 
 function Pattern({ className }: { className?: string }) {

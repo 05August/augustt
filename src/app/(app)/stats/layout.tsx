@@ -1,9 +1,11 @@
-import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Coding Stats",
-  description: "Wakatime coding statistics and analytics dashboard",
-};
+  description:
+    "Real-time Wakatime coding statistics for Augustt — track coding hours, languages, projects, and productivity trends.",
+  path: "/stats",
+});
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return children;

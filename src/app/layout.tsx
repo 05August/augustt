@@ -1,81 +1,13 @@
 import "@/styles/globals.css";
 
-import type { Metadata, Viewport } from "next";
-import type { WebSite, WithContext } from "schema-dts";
+import type { Viewport } from "next";
 
 import { Providers } from "@/components/providers";
-import { META_THEME_COLORS, SITE_INFO } from "@/config/site";
-import { USER } from "@/data/user";
+import { META_THEME_COLORS } from "@/config/site";
 import { fontMono, fontSans } from "@/lib/fonts";
+import { getWebSiteJsonLd, rootMetadata } from "@/lib/seo";
 
-function getWebSiteJsonLd(): WithContext<WebSite> {
-  return {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: SITE_INFO.name,
-    url: SITE_INFO.url,
-    alternateName: [USER.username],
-  };
-}
-
-export const metadata: Metadata = {
-  metadataBase: new URL(SITE_INFO.url),
-  alternates: {
-    canonical: "/",
-  },
-  title: {
-    template: `%s | ${SITE_INFO.name}`,
-    default: `${USER.displayName} | Just another clown`,
-  },
-  description: SITE_INFO.description,
-  keywords: SITE_INFO.keywords,
-  authors: [
-    {
-      name: "augustt",
-      url: SITE_INFO.url,
-    },
-  ],
-  creator: "augustt",
-  openGraph: {
-    siteName: SITE_INFO.name,
-    url: "/",
-    type: "profile",
-    firstName: USER.firstName,
-    lastName: USER.lastName,
-    username: USER.username,
-    gender: USER.gender,
-    images: [
-      {
-        url: SITE_INFO.ogImage,
-        width: 1200,
-        height: 630,
-        alt: SITE_INFO.name,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    creator: "@iamaugustt", // Twitter username
-    images: [SITE_INFO.ogImage],
-  },
-  icons: {
-    icon: [
-      {
-        url: "/assets/favicon.ico",
-        sizes: "any",
-      },
-      {
-        url: "/assets/favicon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: {
-      url: "/assets/apple-touch-icon.png",
-      type: "image/png",
-      sizes: "180x180",
-    },
-  },
-};
+export const metadata = rootMetadata;
 
 export const viewport: Viewport = {
   width: "device-width",

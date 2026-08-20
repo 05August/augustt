@@ -1,8 +1,8 @@
 {
-  "name": "augustt.site",
+  "name": "augustt.dev",
   "version": "0.1.0",
   "description": "This project is based on the original chanhdai.com repo, which I used as a foundation. I’ve customized and expanded it further to better reflect my own portfolio, including new sections, styling adjustments, and additional features. The site is built with Next.js, Tailwind CSS, and shadcn/ui to ensure a modern, fast, and seamless user experience.",
-  "homepage": "https://augustt.site",
+  "homepage": "https://augustt.dev",
   "license": "MIT",
   "author": {
     "name": "Thuan Thieu",

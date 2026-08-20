@@ -2,10 +2,10 @@ import type { Project } from "../types/projects";
 
 export const PROJECTS: Project[] = [
   {
-    id: "augustt-site",
-    title: "augustt.site",
-    time: "05.2025 — present",
-    link: "https://augustt.site",
+    id: "augustt-dev",
+    title: "augustt.dev",
+    time: "05.2025 — 06.2025",
+    link: "https://augustt.dev",
     tags: [
       "Personal Project",
       "Next.js 15",
@@ -23,21 +23,22 @@ export const PROJECTS: Project[] = [
     logo: "/assets/images/blackgoku.jpg",
   },
   {
-    id: "zeus-platform",
-    title: "Zeus Platform",
+    id: "ican-learning-platform",
+    title: "ICAN Learning Platform",
     time: "12.2024 — present",
-    // link: "https://zeus-platform.pages.dev",
     tags: [
       "Company Project",
       "React",
       "TypeScript",
+      "Zustand",
       "React Query",
-      "Shadcn UI",
       "Tailwind CSS",
+      "Shadcn UI",
       "BytePlus SDK",
+      "Sentry",
     ],
     description:
-      "An edtech platform that connects students with teachers for live virtual classes and personalized learning.\n\n- Build core features for users to book lessons or classes with teachers, and for teachers to create classes and build profiles.\n- Develop authentication system including sign up, login, verify and password recovery.\n- Integrate BytePlus SDK to enable virtual classrooms with audio/video, screen sharing, chat, raise hand, and moderation tools (mute/unmute).\n- Implement parent dashboard allowing guardians to purchase lessons for children and link them to student accounts.\n- Ensure UI/UX consistency and responsiveness across devices.\n- Collaborate with backend and design teams to deliver seamless learning experiences. ",
+      "Education platform serving customer-facing product sites, student/teacher dashboards, and internal admin — with a shared component library, custom hooks, and consistent layout system.\n\n- Implemented core product flows: lesson booking, teacher onboarding, parent modules, and admin operations; designed role-based access (admin / teacher / student / parent) with protected routes.\n- Integrated BytePlus SDK for real-time virtual classrooms (audio/video, screen sharing, chat, raise hand, mic/camera controls).\n- Set up Sentry for error tracking; applied code splitting, lazy loading, and React rendering optimization to improve load performance and maintainability.",
   },
   {
     id: "q3-landing-page",
@@ -49,28 +50,28 @@ export const PROJECTS: Project[] = [
   {
     id: "charclub-ai",
     title: "CharClub AI",
-    time: "02.2024 - 12.2024",
+    time: "02.2024 — 12.2024",
     link: "https://charclub.ai",
     tags: [
       "Product Project",
-      "Next.js 14",
-      "Tailwind CSS v3",
-      "Headless UI",
-      "Stripe",
-      "Centrifugo",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn UI",
       "React Query",
-      "Auth0",
-      "Google Tag Manager",
+      "Centrifugo",
+      "Stripe",
       "Datadog",
+      "GTM",
     ],
     description:
-      "A platform for engaging in immersive conversations with fictional characters.\n- Review the design document, clarify the requirements, and break them into manageable tasks for accurate estimation and smooth implementation according to the plan.\n- Developed UI/UX and complex logic functions, implemented Server-Side Rendering (SSR) for web chat and Incremental Static Regeneration (ISR) for a blog, and built features for user login, real-time voice chat, and Stripe payment integration using ReactJS, Next.js, Tailwind CSS for styling, React Query for data fetching, and Centrifugo for real-time communication via WebSockets.\n- Integrated tracking with Google Tag Manager and Datadog for performance monitoring and analytics.\n- SEO Optimization: JSON-LD schema, sitemap, robots\n- Developed new features, maintained old screens, and resolved bugs to ensure smooth functionality.",
+      "AI chat platform for immersive conversations with fictional characters.\n\n- Developed Next.js SSR for the interactive web chat and SSG/ISR for the blog to balance SEO, performance, and dynamic content.\n- Implemented authentication, real-time voice chat, and complex frontend business logic.\n- Integrated Centrifugo for real-time messaging, Stripe for payments, plus Google Tag Manager and Datadog for analytics and performance monitoring.",
     logo: "/assets/projects/charclub.png",
   },
   {
     id: "martech-dashboard",
     title: "Martech Dashboard",
-    time: "11.2023 - 01.2024",
+    time: "11.2023 — 01.2024",
     tags: ["In-house Project", "Next.js", "Tailwind CSS", "Headless UI"],
     description:
       "An internal tool for tracking and visualizing mobile app keyword rankings from the App Store and Google Play.\n- Created internal dashboard for tracking mobile app keyword rankings from App Store & Google Play.\n- Handled data crawling, parsing, and visualization.",
@@ -89,13 +90,13 @@ export const PROJECTS: Project[] = [
       "React Query",
     ],
     description:
-      "A platform for property developer and agent collaboration\n- Review the design document, clarify the requirements, and break them into manageable tasks for accurate estimation and smooth implementation according to the plan.\n- Developed the UI/UX and complex logic for property developer and agent collaboration. Utilized ReactJS, Material UI for styling, and Zustand for state management. Streamlined data fetching from Strapi CMS to dynamically load content across the platform.\n- Developed new features, maintained old screens, and resolved bugs to ensure smooth functionality.",
+      "A platform connecting property developers and agents.\n\n- Built responsive UI and complex frontend workflows for developer–agent collaboration.\n- Implemented Zustand state management and Strapi CMS integration for dynamic content and data fetching across the platform.",
     logo: "/assets/projects/coreproptech.png",
   },
   {
     id: "flyspaces",
     title: "Flyspaces",
-    time: "06.2023 - 12.2023",
+    time: "06.2023 — 12.2023",
     link: "https://flyspaces.com",
     tags: [
       "Outsourcing Project",
@@ -105,12 +106,12 @@ export const PROJECTS: Project[] = [
       "Tailwind CSS",
     ],
     description:
-      "A platform for renting flexible workspaces, including offices, meeting rooms, and event spaces.\n- Gather requirements from the client, review the design document, and break them into manageable tasks for accurate estimation and smooth implementation according to the plan.\n- Improved the UI/UX of the landing page, implemented new features for both the admin and client pages, and resolved bugs to enhance overall usability and performance. Utilized ReactJS, Redux for state management, and Tailwind CSS for a responsive and visually appealing design.\n- Developed new features, maintained old screens, and resolved bugs to ensure smooth functionality.",
+      "A platform for renting flexible workspaces, including offices, meeting rooms, and event spaces.\n\n- Developed and improved responsive UI across landing, client, and admin applications; implemented new features and business workflows.\n- Resolved frontend issues to improve usability and reliability across devices.",
   },
   {
     id: "wildcard",
     title: "WildCard",
-    time: "05.2023 - 7.2023",
+    time: "05.2023 — 07.2023",
     tags: [
       "Product Project",
       "Next.js 14",
@@ -119,6 +120,6 @@ export const PROJECTS: Project[] = [
       "Zustand",
     ],
     description:
-      "A platform for creating personalized greeting cards\n- Gather requirements from the client, review the design document, and break them into manageable tasks for accurate estimation and smooth implementation according to the plan.\n- Improved the UI/UX and complex logic functions, implemented server-side rendering (SSR) and resolved bugs to enhance overall usability and performance. Utilized ReactJS, Next.js, and Tailwind CSS for a responsive and visually appealing design.",
+      "A platform for creating personalized greeting cards.\n\n- Built responsive UI and SSR-based pages with React and Next.js; translated design requirements into reusable frontend components.\n- Improved existing features and fixed production bugs for a smoother user experience.",
   },
 ];

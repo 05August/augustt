@@ -1,15 +1,15 @@
-# [augustt.site](https://augustt.site)
+# [augustt.dev](https://augustt.dev)
 
 This project is based on the original chanhdai.com repo, which I used as a foundation. I’ve customized and expanded it further to better reflect my own portfolio, including new sections, styling adjustments, and additional features. The site is built with Next.js, Tailwind CSS, and shadcn/ui to ensure a modern, fast, and seamless user experience.
 
 This is a continuously evolving side project where I experiment with new technologies and keep it updated with the latest advancements in web development.
 
-Check out the live site: [augustt.site](https://augustt.site)
+Check out the live site: [augustt.dev](https://augustt.dev)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://www.augustt.site/assets/images/screenshot-desktop-dark.webp">
-  <source media="(prefers-color-scheme: light)" srcset="https://www.augustt.site/assets/images/screenshot-desktop-light.webp">
-  <img src="https://www.augustt.site/assets/images/screenshot-desktop-light.webp" alt="Screenshot">
+  <source media="(prefers-color-scheme: dark)" srcset="https://www.augustt.dev/assets/images/screenshot-desktop-dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://www.augustt.dev/assets/images/screenshot-desktop-light.webp">
+  <img src="https://www.augustt.dev/assets/images/screenshot-desktop-light.webp" alt="Screenshot">
 </picture>
 
 ## Core Features & Technologies

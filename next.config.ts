@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "augustt.site",
+        hostname: "augustt.dev",
         port: "",
       },
     ],

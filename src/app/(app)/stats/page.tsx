@@ -19,7 +19,7 @@ export const revalidate = 3600;
 import type { WakatimeStatsData } from "@/types/wakatime";
 
 async function fetchWakatimeData(): Promise<WakatimeStatsData> {
-  const baseUrl = process.env.BASE_URL ?? "https://augustt.site";
+  const baseUrl = process.env.BASE_URL ?? "https://augustt.dev";
 
   try {
     // Fetch all time ranges in parallel
