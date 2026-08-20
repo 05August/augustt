@@ -1,12 +1,15 @@
 import type { MetadataRoute } from "next";
 
-import { SITE_INFO } from "@/config/site";
+import { META_THEME_COLORS, SITE_INFO } from "@/config/site";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
     short_name: SITE_INFO.name,
-    name: SITE_INFO.name,
+    name: `${SITE_INFO.name} — Frontend Developer Portfolio`,
     description: SITE_INFO.description,
+    lang: "en",
+    theme_color: META_THEME_COLORS.light,
+    background_color: META_THEME_COLORS.light,
     icons: [
       {
         src: "/assets/favicon.svg",
@@ -39,7 +42,7 @@ export default function manifest(): MetadataRoute.Manifest {
     scope: "/",
     screenshots: [
       {
-        src: "/aasets/images/screenshot-mobile-dark.webp",
+        src: "/assets/images/screenshot-mobile-dark.webp",
         type: "image/webp",
         sizes: "440x956",
         form_factor: "narrow",
@@ -51,13 +54,13 @@ export default function manifest(): MetadataRoute.Manifest {
         form_factor: "narrow",
       },
       {
-        src: "/aasets/images/screenshot-desktop-dark.webp",
+        src: "/assets/images/screenshot-desktop-dark.webp",
         type: "image/webp",
         sizes: "1920x1080",
         form_factor: "wide",
       },
       {
-        src: "/aasets/images/screenshot-desktop-light.webp",
+        src: "/assets/images/screenshot-desktop-light.webp",
         type: "image/webp",
         sizes: "1920x1080",
         form_factor: "wide",

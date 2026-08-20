@@ -3,10 +3,32 @@ import type { NavItem } from "@/types/nav";
 
 export const SITE_INFO = {
   name: USER.displayName,
-  url: process.env.APP_URL || "https://augustt.site",
+  url: process.env.APP_URL || "https://augustt.dev",
   ogImage: USER.ogImage,
   description: USER.bio,
   keywords: USER.keywords,
+};
+
+export const SEO = {
+  defaultTitle: `${USER.displayName} | Frontend Developer Portfolio`,
+  titleTemplate: `%s | ${USER.displayName}`,
+  defaultDescription:
+    "Augustt (Thiều Văn Thuận) — Frontend Developer in Hanoi with 3+ years building EdTech and SaaS platforms in React, Next.js, and TypeScript.",
+  locale: "en_US",
+  language: "en-US",
+  twitterHandle: "@iamaugustt",
+  ogImageAlt: `${USER.displayName} — Frontend Developer Portfolio`,
+  keywords: USER.keywords,
+  knowsAbout: [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "EdTech",
+    "Frontend Development",
+    "Web Performance",
+    "SEO",
+  ],
 };
 
 export const META_THEME_COLORS = {
@@ -43,7 +65,7 @@ export const VIETNAM_HOLIDAYS = [
 ];
 
 export const UTM_PARAMS = {
-  utm_source: "augustt.site",
+  utm_source: "augustt.dev",
   utm_medium: "portfolio_website",
   utm_campaign: "referral",
 };

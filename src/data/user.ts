@@ -14,7 +14,7 @@ export const USER = {
   address: "Hanoi Capital, Viet Nam",
   phoneNumber: "MDk4NjI1MTg5Mg==", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   email: "dGh1YW50aGlldTkwQGdtYWlsLmNvbQ==", // base64 encoded
-  website: "https://augustt.site",
+  website: "https://augustt.dev",
   otherWebsites: ["https://augustt.site", "https://augustt.tech"],
   dateOfBirth: "2002-06-27", // YYYY-MM-DD
   jobTitle: "Frontend Developer",
@@ -26,15 +26,41 @@ export const USER = {
     },
   ],
   about: `
-Frontend Developer with over 2 years of experience specializing in ReactJS and Next.js.
-Skilled in building scalable web applications with Clean Architecture, SSR/SSG/ISR, and strong focus on SEO and performance optimization.
-Experienced with TypeScript, Tailwind CSS, and modern UI libraries like Shadcn UI, Material UI, Ant Design, and Headless UI.
-Passionate about creating responsive, high-quality user interfaces and improving developer experience through reusable components and clean code.
- I adapt easily to new technologies and excel in research, logical thinking, and problem-solving.
+Frontend Developer with 3+ years of experience engineering large-scale EdTech and SaaS platforms.
+
+Highly proficient in the React / Next.js / TypeScript ecosystem and scalable UI architecture. Adopts AI-assisted workflows (Cursor, MCP) to reduce feature time-to-market, with a strong focus on web performance, SSR/SSG/ISR, and clean reusable components.
+
+Recognized for a problem-solving mindset and seamless collaboration with Product, Design, and Backend teams.
   `,
   avatar: "/assets/images/blackgoku.jpg",
   ogImage: "/assets/images/blackgoku.jpg", // todo: change this
-  keywords:
-    "august, thieu van thuan, thieu van thuan august, thuận thiều văn, thiều văn thuận, augustvn, augustt, augustt.tech, augustt.site",
+  keywords: [
+    // Personal brand & name variants
+    "Augustt",
+    "Thieu Van Thuan",
+    "Thiều Văn Thuận",
+    "thieu van thuan august",
+    "thuận thiều văn",
+    "thiều văn thuận",
+    "augustvn",
+    "05August",
+    // Role & profession
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "TypeScript Developer",
+    "Web Developer Vietnam",
+    "Frontend Developer Hanoi",
+    // Tech stack
+    "React",
+    "Next.js ",
+    "TypeScript",
+    "Tailwind CSS",
+    // Site & intent
+    "augustt.dev",
+    "developer portfolio",
+    "coding statistics",
+    "Wakatime stats",
+  ],
   dateCreated: "2025-05-25", // YYYY-MM-DD
 };
